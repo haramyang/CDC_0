@@ -91,13 +91,13 @@ input[type=submit]:hover {
 
 ::placeholder {
     color: black;
-    font-family: arial;
+    font-family: courier;
     font-size: 12px;
 }
 
 select {
 	font-family: courier;
-    font-size: 112px;
+    font-size: 12px;
 }
 
 
