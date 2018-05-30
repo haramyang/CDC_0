@@ -91,7 +91,7 @@ input[type=submit]:hover {
 
 ::placeholder {
     color: black;
-    font-family: courier;
+    font-family: arial;
     font-size: 12px;
 }
 
