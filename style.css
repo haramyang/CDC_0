@@ -1,0 +1,104 @@
+
+.button {
+	text-decoration: none;
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: courier;
+    cursor: pointer;
+}
+
+div.main {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.split {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.left {
+	left: 0;
+	width: 50%;
+	background-color: #4778E0;
+}
+
+.right {
+	right: 0;
+	width: 50%;
+	background-color: black;
+}
+
+.information {
+	text-align: center;
+	margin-top: 185px;
+}
+
+label {
+	font-family: courier;
+}
+
+input[type=text] {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	/*border: 1px solid gray;*/
+	color: black;
+}
+
+input[type=text], select {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+
+
+input[type=text]:focus {
+	border: 2px solid #555;
+}
+
+input[type=submit] {
+	width: 70%;
+	background-color: #3060C6;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: courier;
+	font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background-color: #195AE4;
+}
+
+::placeholder {
+    color: black;
+    font-family: courier;
+    font-size: 12px;
+}
+
+select {
+	font-family: courier;
+    font-size: 14px;
+}
+
+
+
