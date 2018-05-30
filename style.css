@@ -40,7 +40,7 @@ div.main {
 .right {
 	right: 0;
 	width: 50%;
-	background-color: blue;
+	background-color: gray;
 }
 
 .information {
@@ -91,13 +91,13 @@ input[type=submit]:hover {
 
 ::placeholder {
     color: black;
-    font-family: courier;
+    font-family: arial;
     font-size: 12px;
 }
 
 select {
 	font-family: courier;
-    font-size: 14px;
+    font-size: 112px;
 }
 
 
