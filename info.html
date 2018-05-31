@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title> Previous Information </title>
 		<link href = "style.css" rel = "stylesheet" type = "text/css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
+
 	<body>
+
 		<div class = "split left">
 			<div class = "information">
 
@@ -35,12 +38,32 @@
 					<option value = "F"> F</option>
 				</select>
 
+				<div class = "slide-container">
+					<p> Workload </p>
+					<input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "myRange">
+					<br>
+
+					<p> Difficulty </p>
+					<input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "myRange">
+					<br>
+
+				</div>
+
 				<br>
 				<br>
 				<input type = "submit" value = "Submit">
+
+				<div class = "previous-button">
+					<a href="index.html" class="previous round">&#8249;</a>
+				</div>
 			</div>
 		</div>
+
 		<div class = "split right">
+			<div class = "next-button">
+				<a href="#" class="next round">&#8250;</a>
+			</div>
 		</div>
+		
 	</body>
 </html>

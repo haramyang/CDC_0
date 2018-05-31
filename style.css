@@ -34,18 +34,18 @@ div.main {
 .left {
 	left: 0;
 	width: 50%;
-	background-color: #4778E0;
+	background-color: #3486F5;
 }
 
 .right {
 	right: 0;
 	width: 50%;
-	background-color: gray;
+	background-color: white;
 }
 
 .information {
 	text-align: center;
-	margin-top: 185px;
+	margin-top: 120px;
 }
 
 label {
@@ -59,6 +59,7 @@ input[type=text] {
 	box-sizing: border-box;
 	/*border: 1px solid gray;*/
 	color: black;
+	font-size: 15px;
 }
 
 input[type=text], select {
@@ -73,8 +74,8 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-	width: 70%;
-	background-color: #3060C6;
+	width: 20%;
+	background-color: black;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -92,12 +93,62 @@ input[type=submit]:hover {
 ::placeholder {
     color: black;
     font-family: courier;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 select {
 	font-family: courier;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+input[type=range] {
+	width: 70%;
+}
+
+.slider {
+	-webkit-appearance: none;
+	height: 5px;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+a {
+	text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+	background-color: gray;
+    color: white;
+}
+
+.round {
+    border-radius: 0%;
+}
+
+.previous {
+	background-color: black;
+	color: white;
+}
+
+.previous-button {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.next {
+	background-color: black;
+	color: white;
+}
+
+.next-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
 
 
