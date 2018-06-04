@@ -13,17 +13,17 @@
 		<div class = "split left">
 			<div class = "information">
 
-				<label for = "class_name"> Class Name </label>
+				<label for = "class_name" name = "label"> Class Name </label>
 				<br>
 				<input type = "text" name = "class_name" placeholder = "Class Name"><br>
 				
 				<br>
-				<label for = "professor name"> Professor Name </label>
+				<label for = "professor_name" name = "label"> Professor Name </label>
 				<br>
 				<input type = "text" name = "professor_name" placeholder = "Professor Name"><br>
 				
 				<br>
-				<label for = "grade"> Grade </label>
+				<label for = "grade" name = "label"> Grade </label>
 				<br>
 				<select id = "grade" name = "grade">
 					<option value = "A+"> A+</option>
@@ -40,13 +40,19 @@
 
 				<div class = "slide-container">
 					<p> Workload </p>
+
+					<div class="range-slider" data-slider data-options="step: 20;">
+					  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+					  <span class="range-slider-active-segment"></span>
+					  <input type="hidden">
+					</div>
+					
 					<input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "myRange">
 					<br>
 
 					<p> Difficulty </p>
 					<input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "myRange">
 					<br>
-
 				</div>
 
 				<br>
@@ -64,6 +70,6 @@
 				<a href="#" class="next round">&#8250;</a>
 			</div>
 		</div>
-		
+
 	</body>
 </html>
