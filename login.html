@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CDC Homepage </title>
+		<link href = "stylemain.css" rel = "stylesheet" type = "text/css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<script src="main.js"></script>
+		<div class = "main">
+
+			<a class = "go" href = "info.html"> GO </a>
+
+			<button type="button" onclick="document.getElementById('login").style.display='block'" style="width:auto">Login</button>
+
+			<div id="login" class="background">
+				<form class="background-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<img src="avatar.png" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit">Login</button>
+						<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me </label>
+					</div>
+
+					<div class="container">
+						<button type="button" click="document.getElementById('login').style.display='none'" class="cancel">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	
+</html>
