@@ -96,7 +96,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #195AE4;
+    background-color: gray;
 }
 
 ::placeholder {
