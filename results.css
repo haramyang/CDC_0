@@ -1,0 +1,83 @@
+
+a {
+	text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+
+span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: black solid 10px; 
+      background-color: white;
+      /*background-color: #e8edf3;*/
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #e3e3e3;
+}
+
+.mainText{
+	font-family: Avenir;
+	color: white;
+}
+
+
+#title{
+	color: black;
+	text-align: center;
+	font-size: 50px;
+}
+
+
+.round {
+    border-radius: 0%;
+}
+
+.previous {
+	background-color: black;
+	color: white;
+}
+
+.previous-button {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.export {
+	background-color: black;
+	color: white;
+}
+
+.export-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#score {
+	text-align: right;
+	font-size: 250px;
+	padding-right: 200px;
+}
+
+#mainBox {
+	background-color: black;/* #22264b; #3b3a36;*/
+}
+
+#pepTalk{
+	text-align: right;
+	position: relative;
+	padding: 30px;
+	margin: 20px 150px;
+	font-size: 24px;
+	font-family: Avenir;
+	color: white;
+    /*background: white;
+    */
+}
+
