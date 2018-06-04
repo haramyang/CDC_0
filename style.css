@@ -7,7 +7,7 @@
     padding: 15px 25px;
     text-align: center;
     font-size: 16px;
-    font-family: courier;
+    font-family: aveninr;
     cursor: pointer;
 }
 
@@ -44,12 +44,13 @@ div.main {
 }
 
 .information {
-	text-align: center;
 	margin-top: 120px;
+	margin-left: 25%;
 }
 
 label {
-	font-family: courier;
+	font-family: aveninr;
+	color: white;
 }
 
 input[type=text] {
@@ -57,20 +58,27 @@ input[type=text] {
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
-	/*border: 1px solid gray;*/
+	border: 2px solid white;
 	color: black;
 	font-size: 15px;
+	background-color: #3486F5;
 }
 
 input[type=text], select {
 	width: 70%;
 	padding: 12px 20px;
 	margin: 8px 0;
+	color: white;
 }
 
 
 input[type=text]:focus {
-	border: 2px solid #555;
+	border: 2px solid white;
+}
+
+#grade {
+	background-color: #3486F5;
+	border: 2px white solid;
 }
 
 input[type=submit] {
@@ -82,8 +90,9 @@ input[type=submit] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-family: courier;
+	font-family: aveninr;
 	font-size: 14px;
+	margin-left: 26%;
 }
 
 input[type=submit]:hover {
@@ -91,18 +100,23 @@ input[type=submit]:hover {
 }
 
 ::placeholder {
-    color: black;
-    font-family: courier;
+    color: white;
+    font-family: aveninr;
     font-size: 15px;
 }
 
 select {
-	font-family: courier;
+	font-family: aveninr;
     font-size: 15px;
 }
 
 input[type=range] {
 	width: 70%;
+}
+
+
+.slide-container {
+	color: white;
 }
 
 .slider {
@@ -112,6 +126,7 @@ input[type=range] {
 	opacity: 0.7;
 	-webkit-transition: .2s;
     transition: opacity .2s;
+    color: black;
 }
 
 a {
@@ -149,6 +164,10 @@ a:hover {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
+}
+
+.label {
+	text-align: left;
 }
 
 
