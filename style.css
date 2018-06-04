@@ -96,7 +96,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #195AE4;
+    background-color: gray;
 }
 
 ::placeholder {
@@ -126,7 +126,6 @@ input[type=range] {
 	opacity: 0.7;
 	-webkit-transition: .2s;
     transition: opacity .2s;
-    color: black;
 }
 
 a {
