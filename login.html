@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title> CDC Homepage </title>
-		<link href = "stylemain.css" rel = "stylesheet" type = "text/css">
+		<link href = "main.css" rel = "stylesheet" type = "text/css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -10,36 +10,79 @@
 	<body>
 		<script src="main.js"></script>
 		<div class = "main">
+<!--
+			<button type="button" id="loginBtn" style="width:160px">Login</button>
 
-			<a class = "go" href = "info.html"> GO </a>
+			<button type="button" id="newuserBtn" style="width:160px">New User</button>
+-->
+			<button type="button" onclick="document.getElementById('login').style.display='block'" style="width:160px">Login</button>
 
-			<button type="button" onclick="document.getElementById('login").style.display='block'" style="width:auto">Login</button>
+			<button type="button" onclick="document.getElementById('newuser').style.display='block'" style="width:160px">New User</button>
+
+			<button type="button" onclick="location.href='info.html';" style="width:160px" value="Move on">For now LOL</button>
 
 			<div id="login" class="background">
+				<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Login">&times;</span>
+
 				<form class="background-content animate" action="/action_page.php">
+					
+					<!--
 					<div class="imgcontainer">
-						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Login">&times;</span>
 						<img src="avatar.png" alt="Avatar" class="avatar">
 					</div>
+					-->
 
 					<div class="container">
+						<h1>Login</h1>
+						<hr>
+						<br>
+
 						<label for="uname"><b>Username</b></label>
 						<input type="text" placeholder="Enter Username" name="uname" required>
 
 						<label for="psw"><b>Password</b></label>
 						<input type="password" placeholder="Enter Password" name="psw" required>
 
-						<button type="submit">Login</button>
-						<label>
-						<input type="checkbox" checked="checked" name="remember"> Remember me </label>
-					</div>
-
-					<div class="container">
-						<button type="button" click="document.getElementById('login').style.display='none'" class="cancel">Cancel</button>
-						<span class="psw">Forgot <a href="#">password?</a></span>
+						<div class="clearfix">
+							<button type="submit">Login</button>
+							<label>
+							<input type="checkbox" checked="checked" name="remember"> Remember me </label>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
 					</div>
 				</form>
 			</div>
+
+			<div id="newuser" class="background">
+				<span onclick="document.getElementById('newuser').style.display='none'" class="close" title="Close New User">&times;</span>
+
+				<form class="background-content animate" action="/action_page.php">
+					<div class="container">
+						<h1>Sign Up</h1>
+						<p>Fill in this form to create a new account!</p>
+						<hr>
+						<br>
+
+						<label for="name"><b>Name</b></label>
+						<input type="text" placeholder="Enter Name" name="name" required>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+
+						<label for="password"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="password" required>
+
+						<label for="password-repeat"><b>Repeat Password</b></label>
+						<input type="password" placeholder="Repeat Password" name="password-repeat" required>
+
+						<div class="clearfix">
+							<button type="submit">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
 		</div>
 	</body>
 	
