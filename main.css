@@ -1,3 +1,4 @@
+/* go button on index */
 .go {
 	text-decoration: none;
     background-color: white;
@@ -21,7 +22,10 @@ div.main {
 	height: 100px;
 }
 
-body {font-family: Arial, Helvetica, avenir;}
+body, html {
+    font-family: Arial, Helvetica, avenir;
+    height: 100%;
+}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -32,6 +36,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+/* Button! */
 button {
     text-decoration: none;
     background-color: white;
@@ -98,7 +103,7 @@ span.psw {
     width: 70%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button (x) */
+/* Close Button */
 .close {
     position: absolute;
     right: 25px;
@@ -147,4 +152,14 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+/* scrolly thing */
+.parallax {
+    background-image: url("test.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
