@@ -6,7 +6,7 @@
     padding: 15px 25px;
     text-align: center;
     font-size: 16px;
-    font-family: aveninr;
+    font-family: avenir;
     cursor: pointer;
 }
 
@@ -21,7 +21,7 @@ div.main {
 	height: 100px;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, avenir;}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -53,7 +53,7 @@ button:hover {
     padding: 10px 18px;
     background-color: #f44336;
 }
-
+/*
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -64,7 +64,7 @@ img.avatar {
     width: 40%;
     border-radius: 50%;
 }
-
+*/
 .container {
     padding: 16px;
 }
@@ -76,7 +76,7 @@ span.psw {
 
 /* The Modal (background) */
 
-.modal {
+.background {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -90,21 +90,21 @@ span.psw {
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
-.modal-content {
+/* Background Content/Box */
+.background-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 70%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
 .close {
     position: absolute;
     right: 25px;
-    top: 0;
+    top: 1px;
     color: #000;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -120,6 +120,14 @@ span.psw {
     animation: animatezoom 0.6s
 }
 
+/* clearfix to correct overflow stuff */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* css animation */
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
