@@ -7,7 +7,7 @@
     padding: 15px 25px;
     text-align: center;
     font-size: 16px;
-    font-family: aveninr;
+    font-family: avenir;
     cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ div.main {
 }
 
 label {
-	font-family: aveninr;
+	font-family: avenir;
 	color: white;
 }
 
@@ -90,7 +90,7 @@ input[type=submit] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-family: aveninr;
+	font-family: avenir;
 	font-size: 16px;
 	margin-left: 26%;
 }
@@ -101,12 +101,12 @@ input[type=submit]:hover {
 
 ::placeholder {
     color: white;
-    font-family: aveninr;
+    font-family: avenir;
     font-size: 15px;
 }
 
 select {
-	font-family: aveninr;
+	font-family: avenir;
     font-size: 15px;
 }
 
@@ -116,6 +116,7 @@ input[type=range] {
 
 
 .slide-container {
+	font-family: avenir;
 	color: white;
 }
 
@@ -173,5 +174,9 @@ a:hover {
 	margin-left: 20px;
 }
 
+.float-box {
+	border: 2px solid black;
+	margin: 30px;
+}
 
 
