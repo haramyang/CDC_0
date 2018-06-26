@@ -57,7 +57,8 @@ window.onload = function() {
         //dynDiv.innerHTML = "Class name: " + a + myBr + " Professor name: " + b + myBr + " Grade: " + c + myBr + " Workload: " + d + myBr + " Difficulty: " + e;
         pnl.appendChild(dynDiv);
 
-        document.getElementById("output_class_name").style.font = "avenir";
+        // Tryna fix some font
+        //document.getElementById("output_class_name").style.font = "avenir";
 
 
 		/*
