@@ -10,7 +10,6 @@ function Class(classname, professorname, grade, workload, difficulty) {
     this.diff = difficulty;
 }
 
-
 window.onload = function() {
 
 	var submit = document.getElementById('class-form');
@@ -66,12 +65,16 @@ window.onload = function() {
 		document.getElementById("outputGrade").innerHTML = "Grade: " + c;
 		document.getElementById("workLoad").innerHTML = "Workload: " + d;
 		document.getElementById("outputDiff").innerHTML = "Difficulty: " + e;
-
+		
 		
 		var class1 = Class(a, b, c, d, e);
 
 		class_list[0] = class1;
 		*/
+
+		/* trying to figure out how to pass data */
+		sum_work += d;
+		sum_diff += e;
 		
 	};
 }
