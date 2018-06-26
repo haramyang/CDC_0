@@ -1,0 +1,182 @@
+
+.button {
+	text-decoration: none;
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: avenir;
+    cursor: pointer;
+}
+
+div.main {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.split {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.left {
+	left: 0;
+	width: 50%;
+	background-color: #3486F5;
+}
+
+.right {
+	right: 0;
+	width: 50%;
+	background-color: white;
+}
+
+.information {
+	margin-top: 120px;
+	margin-left: 25%;
+}
+
+label {
+	font-family: avenir;
+	color: white;
+}
+
+input[type=text] {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid white;
+	color: black;
+	font-size: 15px;
+	background-color: #3486F5;
+}
+
+input[type=text], select {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	color: white;
+}
+
+
+input[type=text]:focus {
+	border: 2px solid white;
+}
+
+#grade {
+	background-color: #3486F5;
+	border: 2px white solid;
+}
+
+input[type=submit] {
+	width: 20%;
+	background-color: black;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: avenir;
+	font-size: 16px;
+	margin-left: 26%;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+::placeholder {
+    color: white;
+    font-family: avenir;
+    font-size: 15px;
+}
+
+select {
+	font-family: avenir;
+    font-size: 15px;
+}
+
+input[type=range] {
+	width: 70%;
+}
+
+
+.slide-container {
+	font-family: avenir;
+	color: white;
+}
+
+.slider {
+	-webkit-appearance: none;
+	height: 5px;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+a {
+	text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+	background-color: gray;
+    color: white;
+}
+
+.round {
+    border-radius: 0%;
+}
+
+.previous {
+	background-color: black;
+	color: white;
+}
+
+.previous-button {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+}
+
+.next {
+	background-color: black;
+	color: white;
+}
+
+.next-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.label {
+	text-align: left;
+}
+
+.output p {
+	margin-left: 20px;
+}
+
+.float-box {
+	border: 2px solid black;
+	margin: 30px;
+}
+
+

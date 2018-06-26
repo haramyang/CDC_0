@@ -1,4 +1,4 @@
-
+/*Defines what a button is*/
 .button {
 	text-decoration: none;
     background-color: white;
@@ -9,6 +9,35 @@
     font-size: 16px;
     font-family: aveninr;
     cursor: pointer;
+}
+
+/*Defines what a box is*/
+.box {
+	text-decoration: none;
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: aveninr;
+    cursor: pointer;
+}
+
+.class-box {
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+}
+
+.round-box {
+	border-radius: 20%;
+
+}
+
+.color-box {
+	background-color: black;
+	color: white;
 }
 
 div.main {
