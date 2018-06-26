@@ -6,6 +6,18 @@ function addAClass() {
 	//alert("Hello World! :)");
 }
 
+function saveData() {
+	
+	sessionStorage.setItem("label", "exists")
+}
+
+function loadData() {
+	var storedValue = sessionStorage.getItem('label');
+	if (storedValue == "exists") {
+		document.getElementById("Right Side").innerHTML += '<div class="class-box fadeInDown animated"><a href="wha" class="round-box color-box"> hello </a></div>';
+	}
+}
+
 /*
 var modal = document.getElementById('login');
 
