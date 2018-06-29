@@ -10,8 +10,11 @@ function Class(classname, professorname, grade, workload, difficulty) {
     this.diff = difficulty;
 }
 
-
 window.onload = function() {
+
+	var sum_diff = 0;
+
+	sessionStorage.setItem("sum_diff", sum_diff);
 
 	var submit = document.getElementById('class-form');
 
@@ -53,26 +56,27 @@ window.onload = function() {
         myP.appendChild(d_t);
         myP.appendChild(e_t);
 
+        /* trying to figure out how to pass data */
+		var temp = sessionStorage.getItem('sum_diff');
+		temp = Number(temp) + Number(e);
+		if(temp != null) {
+			myP.appendChild(document.createTextNode("Sum is: " + temp));
+		}
+		sessionStorage.setItem("sum_diff", temp);
+
         dynDiv.appendChild(myP);
         //dynDiv.innerHTML = "Class name: " + a + myBr + " Professor name: " + b + myBr + " Grade: " + c + myBr + " Workload: " + d + myBr + " Difficulty: " + e;
         pnl.appendChild(dynDiv);
 
-
+        /* changing the font of javascript text */
         document.getElementById("output_class_name").style.fontFamily = "avenir";
-
-
-		/*
-		document.getElementById("className").innerHTML = "Class name: " + a;
-		document.getElementById("professorName").innerHTML = "Professor name: " + b;
-		document.getElementById("outputGrade").innerHTML = "Grade: " + c;
-		document.getElementById("workLoad").innerHTML = "Workload: " + d;
-		document.getElementById("outputDiff").innerHTML = "Difficulty: " + e;
-
 		
+		/*
 		var class1 = Class(a, b, c, d, e);
 
 		class_list[0] = class1;
 		*/
-		
+
+
 	};
 }
