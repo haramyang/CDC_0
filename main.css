@@ -1,12 +1,12 @@
 /* go button on index */
 .go {
 	text-decoration: none;
-    background-color: white;
-    border: solid 2px black;
-    color: black;
+    background-color: #1d2120;
+    border: solid 2px white;
+    color: white;
     padding: 15px 25px;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-family: avenir;
     cursor: pointer;
 }
@@ -18,13 +18,31 @@ div.main {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	width: 100px;
-	height: 100px;
+	width: 500px;
+	height: 500px;
 }
 
 body, html {
     font-family: avenir;
     height: 100%;
+    background-color: #1d2120;
+}
+
+.mainpage {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    font-family: impact;
+    font-size: 90px;
+    color: white;
 }
 
 input[type=text], input[type=password] {
@@ -39,13 +57,13 @@ input[type=text], input[type=password] {
 /* Button! */
 button {
     text-decoration: none;
-    background-color: white;
-    border: solid 2px black;
-    color: black;
+    background-color: #1d2120;
+    border: solid 2px white;
+    color: white;
     padding: 15px 25px;
     text-align: center;
-    font-size: 16px;
-    font-family: avenir;
+    font-size: 20px;
+    font-family: impact;
     cursor: pointer;
 }
 
@@ -79,7 +97,7 @@ span.psw {
     padding-top: 16px;
 }
 
-/* The Modal (background) */
+/* The Modal (background grey opaque box) */
 
 .background {
     display: none; /* Hidden by default */
@@ -97,9 +115,9 @@ span.psw {
 
 /* Background Content/Box */
 .background-content {
-    background-color: #fefefe;
+    background-color: white;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     width: 70%; /* Could be more or less, depending on screen size */
 }
 
@@ -121,7 +139,6 @@ span.psw {
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
 
@@ -130,17 +147,6 @@ span.psw {
     content: "";
     clear: both;
     display: table;
-}
-
-/* css animation */
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */

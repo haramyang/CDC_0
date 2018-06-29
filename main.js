@@ -3,6 +3,14 @@ function foo() {
 	alert("Hello World! :)")
 }
 
+/*get item*/
+var val = sessionStorage.myValue;
+sessionStorage.getItem('label');
+
+/*set item*/
+sessionStorage.myValue = 'value';
+sessionStorage.setItem('label', 'value');
+
 /*
 var modal = document.getElementById('login');
 
