@@ -13,8 +13,10 @@ function Class(classname, professorname, grade, workload, difficulty) {
 window.onload = function() {
 
 	var sum_diff = 0;
+	var sum_work = 0;
 
 	sessionStorage.setItem("sum_diff", sum_diff);
+	sessionStorage.setItem("sum_work", sum_work);
 
 	var submit = document.getElementById('class-form');
 
@@ -57,12 +59,22 @@ window.onload = function() {
         myP.appendChild(e_t);
 
         /* trying to figure out how to pass data */
-		var temp = sessionStorage.getItem('sum_diff');
-		temp = Number(temp) + Number(e);
-		if(temp != null) {
-			myP.appendChild(document.createTextNode("Sum is: " + temp));
-		}
-		sessionStorage.setItem("sum_diff", temp);
+		var temp_diff = sessionStorage.getItem('sum_diff');
+		var temp_work = sessionStorage.getItem('sum_work');
+
+		/* adding the number */
+		temp_diff = Number(temp_diff) + Number(e);
+		temp_work = Number(temp_work) + Number(d);
+
+		/* printing out sum values */
+		myP.appendChild(document.createTextNode(" Sum_work is: " + temp_work));
+		myP.appendChild(document.createTextNode(" Sum_diff is: " + temp_diff));
+
+		/* updating the value with the current sum */
+		sessionStorage.setItem("sum_work", temp_work);
+		sessionStorage.setItem("sum_diff", temp_diff);
+
+		/* printing out the values */
 
         dynDiv.appendChild(myP);
         //dynDiv.innerHTML = "Class name: " + a + myBr + " Professor name: " + b + myBr + " Grade: " + c + myBr + " Workload: " + d + myBr + " Difficulty: " + e;
