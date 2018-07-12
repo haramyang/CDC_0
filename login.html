@@ -3,6 +3,7 @@
 	<head>
 		<title> CDC Homepage </title>
 		<link href = "main.css" rel = "stylesheet" type = "text/css">
+		<link href = "css/animate.css" type = "text/css" rel = "stylesheet">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
@@ -10,23 +11,45 @@
 	<body>
 		<script src="main.js"></script>
 		<div class = "main">
+			<h class="title"> Class Difficulty Calculator </h>
 <!--
 			<button type="button" id="loginBtn" style="width:160px">Login</button>
 
 			<button type="button" id="newuserBtn" style="width:160px">New User</button>
 -->
-			<button type="button" onclick="document.getElementById('login').style.display='block'" style="width:125px">Login</button>
+			<button type="button" onclick="document.getElementById('login').style.display='block'" style="width:150px">Login</button>
 
-			<button type="button" onclick="document.getElementById('newuser').style.display='block'" style="width:125px">New User</button>
+			<button type="button" onclick="document.getElementById('newuser').style.display='block'" style="width:150px">New User</button>
 
-			<button type="button" onclick="location.href='previnfo.html';" style="width:125px" value="Move on">For now LOL</button>
+			<button type="button" onclick="location.href='previnfo.html';" style="width:150px" value="Move on">For now LOL</button>
 
-			<div id="login" class="background">
+			<div id="login" class="background fadeIn animate">
 				<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Login">&times;</span>
 
-				<form class="background-content animate" action="main.php" method="post">
+				<!--
+				<?php
+				$username = $password = "";
+
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					$username = test_input($_POST["username"]);
+					$password = test_input($_POST["password"]);
+				}
+
+				function test_input($data) {
+					$data = trim($data);
+					$data = stripslashes($data);
+					$data = htmlspecialchars($data);
+					return $data;
+				}
+				?>
+				-->
+
+				<form class="background-content fadeInDown animate" method="post" action="main.php">
 					
 					<!--
+					PUT THIS IN THE ACTION THING LOL
+					action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"
+
 					<div class="imgcontainer">
 						<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Login">&times;</span>
 						<img src="avatar.png" alt="Avatar" class="avatar">
@@ -52,15 +75,24 @@
 						</div>
 					</div>
 				</form>
+
+				<!--
+				<?php
+				echo "<h2>TESTING INPUT:</h2>";
+				echo $username;
+				echo "<br>";
+				echo $password;
+				?>
+				-->
+
 			</div>
 
-			<div id="newuser" class="background">
+			<div id="newuser" class="background fadeIn animate">
 				<span onclick="document.getElementById('newuser').style.display='none'" class="close" title="Close New User">&times;</span>
 
-				<form class="background-content animate" action="main.php" method="post">
+				<form class="background-content fadeInDown animate" action="main.php" method="post">
 					<div class="container">
 						<h1>Sign Up</h1>
-						<p>Fill in this form to create a new account!</p>
 						<hr>
 						<br>
 
