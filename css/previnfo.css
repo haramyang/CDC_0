@@ -35,12 +35,20 @@ div.main {
 	left: 0;
 	width: 50%;
 	background-color: #3486F5;
+	background-color: #1d2120;
 }
 
 .right {
 	right: 0;
 	width: 50%;
-	background-color: white;
+	background-color: #feffff;
+	/*
+	background-image: url("1.JPG");
+
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    */
 }
 
 .information {
@@ -49,7 +57,7 @@ div.main {
 }
 
 label {
-	font-family: avenir;
+	font-family: 'Avenir';
 	color: white;
 }
 
@@ -62,6 +70,7 @@ input[type=text] {
 	color: black;
 	font-size: 15px;
 	background-color: #3486F5;
+	background-color: #1d2120;
 }
 
 input[type=text], select {
@@ -78,6 +87,7 @@ input[type=text]:focus {
 
 #grade {
 	background-color: #3486F5;
+	background-color: #1d2120;
 	border: 2px white solid;
 }
 
@@ -177,6 +187,12 @@ a:hover {
 .float-box {
 	border: 2px solid black;
 	margin: 30px;
+}
+
+
+.resize2{
+    width: 700px;
+    height: auto;
 }
 
 
